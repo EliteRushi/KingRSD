@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rushisd123@gmail.com > mr_rd_devil_ </title>
+
+  <!-- Font Awesome for icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      background: radial-gradient(circle, #1e1e2e, #121212);
+      font-family: 'Roboto', sans-serif;
+      color: #f1f1f1;
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* Glowing Cursor Effect */
+    body::before {
+      content: "";
+      position: absolute;
+      top: var(--y);
+      left: var(--x);
+      width: 300px;
+      height: 300px;
+      background: radial-gradient(circle, rgba(181, 189, 104, 0.4), transparent 80%);
+      border-radius: 50%;
+      pointer-events: none;
+      transform: translate(-50%, -50%);
+      transition: top 0.1s ease, left 0.1s ease;
+      z-index: -1;
+    }
+
+    /* Header Section */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1em 2em;
+      background: rgba(40, 40, 40, 0.9);
+      color: #b5bd68;
+      font-weight: 700;
+      font-size: 1.2em;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 10;
+    }
+
+    .header .left, .header .right {
+      text-transform: uppercase;
+    }
+
+    /* Center Content */
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 4em 2em 2em;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      font-weight: 700;
+      color: #b5bd68;
+      margin-bottom: 0.5em;
+    }
+
+    #current-time {
+      font-size: 1.2em;
+      color: #f1f1f1;
+      margin-bottom: 1em;
+    }
+
+    /* Navigation Grid */
+    nav {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5em;
+      width: 100%;
+      max-width: 1000px;
+    }
+
+    /* Cards */
+    ul {
+      list-style: none;
+      background: #282828;
+      padding: 1.5em;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    ul:hover {
+      transform: translateY(-10px);
+      background: #3a3a3a;
+    }
+
+    ul li:first-child {
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #b5bd68;
+      margin-bottom: 0.8em;
+    }
+
+    ul li a {
+      color: #f1f1f1;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.8em;
+      font-size: 1.1em;
+      transition: color 0.3s ease;
+    }
+
+    ul li a i {
+      font-size: 1.5em;
+      color: #b5bd68;
+    }
+
+    ul li a:hover {
+      color: #b5bd68;
+    }
+
+    /* Footer Cursor Animation */
+    p {
+      font-size: 1em;
+      margin-top: 2em;
+      color: #b5bd68;
+    }
+
+    #cursor {
+      display: inline-block;
+      background-color: #b5bd68;
+      animation: blink 1.5s infinite;
+      width: 0.6em;
+      height: 1em;
+    }
+
+    @keyframes blink {
+      0%, 49% { opacity: 0; }
+      50% { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <div class="header">
+    <div class="left">Elite Tech</div>
+    <div class="right">Namaskaram 🙏</div>
+  </div>
+
+  <!-- Welcome Section -->
+  <h1>Welcome, Rushikesh Dhanawade 👑</h1>
+
+  <!-- Navigation Cards -->
+  <nav>
+    <!-- Social Media Section -->
+    <ul>
+      <li>Social Media</li>
+      <li><a href="https://web.whatsapp.com/" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+      <li><a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+      <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
+      <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+      <li><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+    </ul>
+
+    <!-- Productivity Section -->
+    <ul>
+      <li>Productivity</li>
+      <li><a href="https://mail.google.com/" target="_blank"><i class="fas fa-envelope"></i> Gmail</a></li>
+      <li><a href="https://calendar.google.com/" target="_blank"><i class="fas fa-calendar-alt"></i> Google Calendar</a></li>
+      <li><a href="https://drive.google.com/" target="_blank"><i class="fab fa-google-drive"></i> Google Drive</a></li>
+    </ul>
+
+    <!-- News Section -->
+    <ul>
+      <li>News</li>
+      <li><a href="https://www.bbc.com/" target="_blank"><i class="fas fa-globe"></i> BBC News</a></li>
+      <li><a href="https://www.nytimes.com/" target="_blank"><i class="fas fa-newspaper"></i> NY Times</a></li>
+    </ul>
+  </nav>
+
+  <!-- Cursor Footer -->
+  <p><span>rushisd123@gmail.com &gt; </span><span id="cursor"></span></p>
+
+  <!-- Script for Current Time -->
+  <script>
+    function updateTime() {
+      const now = new Date();
+      const hours = now.getHours().toString().padStart(2, '0');
+      const minutes = now.getMinutes().toString().padStart(2, '0');
+      const seconds = now.getSeconds().toString().padStart(2, '0');
+      document.getElementById('current-time').innerText = `Current Time: ${hours}:${minutes}:${seconds}`;
+    }
+
+    setInterval(updateTime, 1000);
+    updateTime();
+
+    // Glowing Background Effect
+    document.addEventListener('mousemove', (e) => {
+      const x = e.clientX + 'px';
+      const y = e.clientY + 'px';
+      document.documentElement.style.setProperty('--x', x);
+      document.documentElement.style.setProperty('--y', y);
+    });
+  </script>
+</body>
+</html>
